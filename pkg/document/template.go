@@ -15,7 +15,7 @@ import (
 	"github.com/norwoodj/helm-docs/pkg/helm"
 )
 
-const defaultDocumentationTemplate = `{{ template "chart.header" . }}
+const defaultDocumentationTemplate = `{{- template "chart.header" . }}
 {{ template "chart.deprecationWarning" . }}
 
 {{ template "chart.badgesSection" . }}
